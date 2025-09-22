@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Explorer</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f0f4; 
+    }
+
+    header {
+      margin-top: 30px;
+      background-color: #1a1a1a; 
+      color: #ff99cc; 
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .main-container {
+      display: flex;
+      width: 100%;
+      height: calc(100vh - 80px); 
+    }
+
+    .left-section {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #424041;
+    }
+
+    .right-section {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #1a1a1a; 
+      color: #fff;
+    }
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    form > input {
+      padding: 10px 25px;
+      border-radius: 30px;
+      border: 2px solid #000;
+      outline: none;
+    }
+
+    form > button {
+      padding: 10px 25px;
+      border-radius: 25px;
+      border: none;
+      background-color: #f46c9a;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form > button:hover {
+      background-color: #e05588;
+    }
+
+    .user-info {
+      text-align: center;
+    }
+
+    .user-info img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 2px solid #ff6699;
+    }
+
+    .user-info h2 {
+      margin: 10px 0 5px 0;
+      color: #ff99cc;
+    }
+
+    .user-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>GitHub Profile Explorer</h1>
+    <p>Search GitHub users by their username and explore their profile info</p>
+  </header>
+
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Left Section -->
+    <div class="left-section demo">
+      <form class="form-control">
+        <input type="text" id="username" name="username" placeholder="Enter GitHub username">
+        <button type="submit">Fetch Profile</button>
+      </form>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section demo">
+      <div class="user-info user-style">
+        <p>👈 Enter a username to see details here</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
