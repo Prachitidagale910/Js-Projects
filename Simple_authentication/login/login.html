@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: #3a0a2a;
+            padding: 20px 30px;
+            border-radius: 16px;
+            width: 350px;
+            box-shadow: 2 80px 200px rgba(78, 5, 5, 0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            /* color: #221616; */
+            margin-bottom: 10px;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-control label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            /* color: #333; */
+        }
+
+        .form-control input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .form-control input:focus {
+            border-color: #ffc0cb;
+            outline: none;
+            box-shadow: 0 0 5px rgba(255,192,203,0.5);
+        }
+
+        .btn-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn {
+            width: 70%;
+            padding: 12px;
+            background-color: #e18393;
+            /* color: #000; */
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff99b6;
+        }
+
+        .link {
+            text-align: center;
+            font-size: 14px;
+            /* color: #555; */
+        }
+
+        .link a {
+            color: #ea3d5a;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+           
+            <div class="btn-div">
+                 <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+        <div class="link">
+            Don't have an account? <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

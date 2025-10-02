@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Data file containing sensitive info
+# Ignore everything inside database folder
+/database/
+
+
+# Optional OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env files
+.env

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication App</title>
+     <style>
+        /* Main container */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* dark background for neon effect */
+            overflow: hidden; /* prevent scrollbars for animation */
+            color: white;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1; /* content above particles */
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3f1f1f; 
+            color: #ffc0cb; /* pink text */
+            padding: 15px 30px;
+            z-index: 2;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 24px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            padding-right: 30px;
+        }
+
+        .buttons a {
+            background-color: hotpink;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+
+        .login {
+            background-color: #ffc0cb; /* pink */
+            color: #000; /* black text */
+        }
+
+        .signup {
+            background-color: #555; /* dark grey */
+            color: #fff; /* white text */
+        }
+
+        /* Section */
+        section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            font-size: 20px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        section > p {
+            font-size: 40px;
+            color: rgb(219, 67, 143);
+            animation: pop 3s ease infinite;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0); }
+            40% { transform: scale(0.6); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <header>
+        <h1>PinkPulse</h1>
+        <div class="buttons">
+          <a href="./login/login.html" class="login">Login</a>
+          <a href="./sign-up/signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+    <section>
+        <p>Welcome to the page!</p>
+    </section>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
